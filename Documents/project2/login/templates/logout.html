@@ -1,0 +1,15 @@
+<html>
+<head><title>Login</title>
+</head>
+
+<body>
+    <div class="form">
+    <form action="{% url 'login:user_logout' %}" method="post">
+    {% csrf_token %}
+        PhoneNumber<input type="text" name="username" size="20"><br />
+        Password<input type="text" name="password" size="20"><br />
+        
+        <input type="submit" value="submit" />
+    </form>
+</body>
+</html>
